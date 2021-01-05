@@ -7,6 +7,4 @@ import androidx.test.espresso.matcher.ViewMatchers.withText
 
 fun textMatches(resourceId: Int, expectedValue: String) {
     onView(withId(resourceId)).check(matches(withText(expectedValue)))
-
-
 }
