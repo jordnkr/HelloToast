@@ -1,6 +1,10 @@
-package com.example.hellotoast
+package com.example.hellotoast.tests
 
 import androidx.test.internal.runner.junit4.AndroidJUnit4ClassRunner
+import com.example.hellotoast.BaseTest
+import com.example.hellotoast.common.*
+import com.example.hellotoast.pages.MainPage
+import com.example.hellotoast.common.textMatches
 import org.junit.Test
 import org.junit.runner.RunWith
 
@@ -10,9 +14,8 @@ class MainActivityTest : BaseTest() {
     fun youWinTest() {
         val mainPage = MainPage()
 
-        for (i in 0..9) {
+        for (i in 0..9)
             clickButton(mainPage.countBtn)
-        }
 
         textMatches(mainPage.showCountText, "You Win!")
     }

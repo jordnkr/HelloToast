@@ -1,4 +1,6 @@
-package com.example.hellotoast
+package com.example.hellotoast.pages
+
+import com.example.hellotoast.R
 
 class MainPage {
     var countBtn: Int = R.id.button_count

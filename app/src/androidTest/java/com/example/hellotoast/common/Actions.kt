@@ -1,4 +1,4 @@
-package com.example.hellotoast
+package com.example.hellotoast.common
 
 import androidx.test.espresso.Espresso.onView
 import androidx.test.espresso.action.ViewActions.click
